@@ -8,31 +8,27 @@ function facto() {
       }
 
     const container = document.getElementById("factoContainer");
-    const praragraph = document.createElement("p");
-    praragraph.innerText = (factoNumber);
+    const paragraph = document.createElement("p");
+    paragraph.innerText = (factoNumber);
     container.appendChild(paragraph);
   }
   function factorial(number){
     return number>1? number*factorial (number-1): 1;
   }
 
-  /*function fibo() {
-    const fiboNumber = parseInt(document.getElementById("inputFibo").value);
+  function fibo() {
+    let fiboNumber = parseInt(document.getElementById("inputFibo").value);
   
-    console.log(fiboNumber);
-  
-    const numberToShow = [];
-    const a=0, b=1;
+    let array =[0,1];
   
     for (let i = 2; i <= fiboNumber; i++) {
-      let res = a+b;
-      a = b;
-      b = res;
-      numberToShow.push(res);
+      array[i] = array[i - 1] + array[i - 2];
     }
+    fiboNumber = array[array.length -1 ];
+
     const container = document.getElementById("fiboContainer");
-    const praragraph = document.createElement("p");
-    praragraph.innerText = numberToShow.join(",");
-    container.appendChild(praragraph);
-  }*/
+    const paragraph = document.createElement("p");
+    paragraph.innerText = (fiboNumber);
+    container.appendChild(paragraph);
+  }
   
