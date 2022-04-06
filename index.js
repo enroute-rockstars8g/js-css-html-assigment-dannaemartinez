@@ -1,16 +1,16 @@
 function facto() {
-    const factoNumber = parseInt(document.getElementById("inputFacto").value);
+    let factoNumber = parseInt(document.getElementById("inputFacto").value);
 
     if (factoNumber==0){
-      factoNumber.push(1);
+      factoNumber=(1);
     } else{
-      factoNumber.push(factorial(factoNumber));
+      factoNumber=(factorial(factoNumber));
       }
 
     const container = document.getElementById("factoContainer");
     const praragraph = document.createElement("p");
     praragraph.innerText = (factoNumber);
-    container.appendChild(praragraph);
+    container.appendChild(paragraph);
   }
   function factorial(number){
     return number>1? number*factorial (number-1): 1;
