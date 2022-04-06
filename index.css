@@ -1,3 +1,19 @@
 html{
-    background-color: #8EE3F5;
+    background-color: #e9eef6;
+}
+body{
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [last-line] 75%;
+    grid-area:
+    "pDiv pDiv pDiv pDiv pDiv"
+    ". sDiv tDiv cDiv .";
+    background-color: #a1a1a1;
+    justify-items: start | center | center | stretch;
+}
+
+.sDiv{
+    background-color: antiquewhite;
+}
+.pDiv{
+    background-color: aliceblue;
 }
