@@ -9,7 +9,7 @@ function facto() {
 
     const container = document.getElementById("factoContainer");
     const paragraph = document.createElement("p");
-    paragraph.innerText = (factoNumber);
+    paragraph.innerText = (factoNumber+"💩");
     container.appendChild(paragraph);
   }
   function factorial(number){
@@ -28,7 +28,7 @@ function facto() {
 
     const container = document.getElementById("fiboContainer");
     const paragraph = document.createElement("p");
-    paragraph.innerText = (fiboNumber);
+    paragraph.innerText = (fiboNumber+"🐰");
     container.appendChild(paragraph);
   }
   
