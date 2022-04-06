@@ -2,18 +2,35 @@ html{
     background-color: #e9eef6;
 }
 body{
-    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-    grid-template-rows: [row1-start] 25% [last-line] 75%;
+    display: grid | inline-grid;
+    /*grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25px [row1-end row2-start row2-end] 75px;
+    justify-items: start | center | center | stretch;*/
     grid-area:
-    "pDiv pDiv pDiv pDiv pDiv"
-    ". sDiv tDiv cDiv .";
+    ". pDiv pDiv pDiv ."
+    ". pDiv pDiv pDiv .";
     background-color: #a1a1a1;
-    justify-items: start | center | center | stretch;
+    
 }
 
 .sDiv{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: sDiv;
     background-color: antiquewhite;
 }
 .pDiv{
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    grid-area: pDiv;
     background-color: aliceblue;
+}
+.tDiv{
+    grid-area: tDiv;
+    background-color:cadetblue;
+}
+.cDiv{
+    grid-area: cDiv;
+    background-color:blanchedalmond;
 }
